@@ -1,0 +1,2 @@
+# CatPhotoApp
+ This repository contains a simple web application created as part of a course to learn the basic structure of HTML. HTML tags are essential for giving a webpage its structure and for adding various elements like images, buttons, and more.  In this project, I've applied the most common HTML tags to build a fun "Cat Photo App." The app showcases how to organize content and add interactive elements using foundational HTML techniques.  Feel free to explore and use this project as a guide to understanding HTML basics!

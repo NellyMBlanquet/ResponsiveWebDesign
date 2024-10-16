@@ -1,0 +1,407 @@
+<!--
+Intro: HTML tags provide structure to a webpage and allow the addition of elements like photos and buttons.
+This course covers the most common HTML tags through the creation of a cat photo app.
+-->
+<!--
+Step 68: Add the declaration <!DOCTYPE html> as the first line of the code to indicate that 
+the document is an HTML5 document. This ensures the browser adheres to industry-wide specifications.
+-->
+<!DOCTYPE html>
+<!--
+Step 67: Add the lang attribute with the value "en" to the opening <html> tag to specify that 
+the language of the page is English. The <html> element is the root element that wraps 
+all content on the page.
+-->
+<html lang="en">
+    <!--
+    Step 65: Add a <head> element above the <body> element to contain metadata about the document, 
+    such as the title, links to stylesheets, and scripts. Metadata provides information 
+    about the page that isn't directly displayed.
+    -->
+    <head>
+        <!--
+        Step 69: Inside the <head> element, add a <meta> element with the attribute charset set to "utf-8". 
+        This tells the browser how to encode characters for the page. The <meta> element is a void element.
+        With that last change, you have completed the Cat Photo App project. Congratulations!
+        -->
+        <meta charset="utf-8">
+        <!--
+        Step 66: Add a <title> element within the <head> element with the text: "CatPhotoApp". 
+        This title is what browsers display in the title bar or tab for the page.
+        -->
+        <title>CatPhotoApp</title>
+    </head>
+    <body>
+         <!-- 
+        Step 5: HTML5 introduces elements that identify different content areas, improving readability, SEO, and accessibility.
+        The main element represents the main content of the document and should contain unique content.
+        Example:
+        <main>
+        <h1>Main content of the document</h1>
+        <p>Additional important content...</p>
+        </main>
+        Wrap the h1 and p elements with <main> tags to define the main section.
+        -->
+        <!-- 
+        Step 6: Nested elements should be indented two spaces for readability.
+        Example:
+        <main>
+        <h1>Main content</h1>
+        <p>Additional content</p>
+        </main>
+        Ensure proper indentation inside the main element.
+        -->
+        <main>
+            <!-- 
+            Step 1: HTML elements have an opening and closing tag with content in between.
+            Example: <openingTag>content</closingTag>
+            The h1 element is a heading element used for the main heading of a webpage.
+            Example: <h1>This is a main heading</h1>
+            Change the text of the h1 element below from "Hello World" to "CatPhotoApp"
+            -->
+            <h1> CatPhotoApp</h1>
+            <!-- 
+            Step 16: Use the section element to separate different content areas. 
+            The section element defines sections in a document and helps with SEO and accessibility. 
+            Example: 
+            <section>
+            <h2>Section Title</h2>
+            <p>Section content...</p>
+            </section>
+            Nest your h2, comment, p, and anchor (a) elements inside a section element.
+            -->
+            <section>
+                <!-- 
+                Step 2: The h1 to h6 elements indicate content importance. The lower the number, the higher the importance. 
+                Example:
+                <h1>most important</h1>
+                <h2>second most important</h2>
+                <h3>third most important</h3>
+                Use only one h1 element per page. Add an h2 element below the h1 element with the text "Cat Photos"
+                -->
+                <h2> Cat Photos</h2>
+                <!-- 
+                Step 3: Use the p element to create a paragraph.
+                Add a p element below the h2 element with the text "See more cat photos in our gallery."
+                -->
+                <!-- 
+                Step 4: Comments allow you to leave messages or make code inactive without affecting the webpage display.
+                A comment starts with < !-- and ends with -- >
+                Example: <! -- TODO: Remove h1 -- >
+                Add a comment above the p element with the text "TODO: Add link to cat photos."
+                -->
+                <!-- 
+                Step 12: Any text can be turned into a link by wrapping it in anchor (a) tags. 
+                Example: <p>I think <a href="https://www.freecodecamp.org">freeCodeCamp</a> is great.</p>
+                In your p element, turn the words "cat photos" into a link by adding 
+                <a> tags and setting the href attribute to https://freecatphotoapp.com.
+                -->
+                <!-- 
+                Step 14: To open links in a new tab, use the target attribute on the anchor (a) element. 
+                The value target="_blank" opens the linked document in a new tab or window. 
+                Example: <a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a>
+                Add a target attribute with the value _blank to the anchor element's opening tag to open the link in a new tab.
+                -->
+                <p> See more <a href="https://freecatphotoapp.com" target="_blank">cat photos</a> in our gallery.</p>
+                <!-- 
+                Step 10: Use the anchor (a) element to link to another page. 
+                Example: <a href="https://www.freecodecamp.org"></a>
+                Add an anchor element after the paragraph that links to: 
+                https://freecatphotoapp.com. The link will not be visible in the preview yet.
+                -->
+                <!-- 
+                Step 11: Link text must be placed between the opening and closing tags of the anchor (a) element. 
+                Example: <a href="https://www.freecodecamp.org">click here to go to freeCodeCamp.org</a>
+                Add the text "link to cat pictures" to the anchor element to serve as the link's text.
+                -->
+                <!-- 
+                Step 13: Since the text "cat photos" is now a link in the p element, 
+                the second anchor element below it is unnecessary. 
+                Delete the entire anchor element below the p element.
+                <a href="https://freecatphotoapp.com">link to cat pictures</a>
+                -->
+                <!-- 
+                Step 7: Use the img element to add images to your website. 
+                The img element has an opening tag only (void element). 
+                Add an img element below the p element; no image will appear yet.
+                -->
+                <!--
+                Step 8: HTML attributes are special words in the opening tag that control an element's behavior. 
+                The src attribute in an img element specifies the image's URL. 
+                Example: <img src="https://cdn.freecodecamp.org/platform/universal/fcc_secondary.svg">
+                Add a src attribute to the existing img element with the URL:
+                https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg
+                -->
+                <!-- 
+                Step 9: Every img element should include an alt attribute for accessibility. 
+                The alt text is used by screen readers and displayed if the image fails to load. 
+                Example: <img src="cat.jpg" alt="A cat">
+                Add an alt attribute to the img element with the text: 
+                "A cute orange cat lying on its back."
+                -->
+                <!-- 
+                Step 15: Any content, including images, can be turned into a link by wrapping it in anchor (a) tags. 
+                Example: 
+                <a href="example-link">
+                    <img src="image-link.jpg" alt="A photo of a cat.">
+                </a>
+                Surround the img element with anchor tags and use https://freecatphotoapp.com as the href attribute value.
+                -->
+                <a href="https://freecatphotoapp.com">
+                    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
+                </a>
+            </section>
+            <!-- 
+            Step 17: Add a new section element below the existing section element to create a second section. 
+            -->
+            <section>
+                <!-- 
+                Step 18: Inside the second section element, add a new h2 element with the text "Cat Lists."
+                -->
+                <h2> Cat Lists</h2>
+                <!-- 
+                Step 19: Adding a lower rank heading (h3) after the last h2 element indicates a new subsection. 
+                Add an h3 element with the text "Things cats love:" inside the second section element.
+                -->
+                <h3> Things cats love:</h3>
+                <!-- 
+                Step 20: Use the ul element to create an unordered list of items. 
+                Add a ul element after the h3 element with the text "Things cats love:". 
+                At this point, nothing will be displayed until list items are added.
+                -->
+                <!-- 
+                Step 21: Use the li element to create list items in an unordered list. 
+                Example: 
+                <ul>
+                <li>milk</li>
+                <li>cheese</li>
+                </ul>
+                Inside the ul element, add three list items to display the following: 
+                - cat nip
+                - laser pointers
+                - lasagna
+                -->     
+                <ul>
+                    <li> cat nip</li>
+                    <li> laser pointers</li>
+                    <li> lasagna</li>
+                </ul>
+                <!-- 
+                Step 23 Passed: The figure element represents self-contained content and will allow you 
+                to associate an image with a caption. Nest the image you just added within a figure element. 
+                -->
+                <figure>
+                     <!-- 
+                    Step 22 Passed: After the unordered list, add a new image with a src attribute value 
+                    set to: https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg 
+                    and its alt attribute value to: A slice of lasagna on a plate. 
+                    -->
+                    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+                    <!-- 
+                    Step 23 Passed: A figure caption (figcaption) element is used to add a caption to describe 
+                    the image contained within the figure element. After the image nested in the figure element, 
+                    add a figcaption element with text set to: Cats love lasagna. 
+                    -->
+                    <!-- 
+                    Step 25 Passed: To place emphasis on a specific word or phrase, you can use the em element.
+                    Emphasize the word love in the figcaption element by wrapping it in an emphasis em element.
+                    -->
+                    <figcaption> Cats <em> love</em> lasagna.</figcaption>
+                </figure>
+                <!-- 
+                Step 26 Passed: After the figure element, add another h3 element with the text: Top 3 things cats hate:
+                 -->
+                <h3> Top 3 things cats hate:</h3>
+                <!-- 
+                Step 27 Passed: The code for an ordered list (ol) is similar to an unordered list, 
+                but list items in an ordered list are numbered when displayed. After the second section element's last h3 element, 
+                add an ordered list with these three list items: flea treatment, thunder, other cats.
+                -->
+                <ol>
+                    <li> flea treatment</li>
+                    <li> thunder</li>
+                    <li> other cats</li>
+                </ol>
+                <!-- 
+                Step 28 Passed: After the ordered list, add another figure element.
+                -->
+                <figure></figure>
+                    <!-- 
+                    Step 29 Passed: Inside the figure element you just added, 
+                    nest an img element with a src attribute set to https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg. 
+                    -->
+                    <!-- 
+                    Step 30 Passed: To improve accessibility of the image you added, 
+                    add an alt attribute with the text: Five cats looking around a field. 
+                    -->
+                    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+                    <!-- 
+                    Step 31 Passed: After the last img element, add a figcaption element with the text Cats hate other cats. 
+                    -->
+                    <!-- 
+                    Step 32 Passed: The strong element is used to indicate that some text is of strong importance or urgent. 
+                    In the figcaption you just added, indicate that "hate" is of strong importance by wrapping it in a strong element. 
+                    -->
+                    <figcaption> Cats <strong> hate</strong> other cats</figcaption>
+            </section>
+            <!-- 
+            Step 33 Passed: It is time to add a new section. Add a third section element below the second section element. 
+            -->
+            <section>
+                <!-- 
+                Step 34 Passed: Inside the third section element, add an h2 element with the text: Cat Form
+                -->
+                <h2> Cat Form</h2>
+                <!-- 
+                Step 35 Passed: Now you will add a web form to collect information from users. The form element is used 
+                to get information from a user like their name, email, and other details. After the Cat Form heading, add a form element. 
+                -->
+                <!-- 
+                Step 36 Passed: The action attribute indicates where form data should be sent. 
+                Add an action attribute with the value https://freecatphotoapp.com/submit-cat-photo to the form element. 
+                -->
+                <form action="https://freecatphotoapp.com/submit-cat-photo">
+                    <!-- 
+                    Step 50 Passed: The fieldset element is used to group related inputs and labels together in a web form. 
+                    Nest the Indoor and Outdoor radio buttons within a fieldset element, and don't forget to indent the radio buttons.
+                    -->
+                    <fieldset>
+                        <!-- 
+                        Step 51 Passed: The legend element acts as a caption for the content in the fieldset element. 
+                        Add a legend element with the text "Is your cat an indoor or outdoor cat?" above both of the radio buttons. 
+                        -->
+                        <legend> Is your cat an indoor or outdoor cat?</legend>
+                        <!-- 
+                        Step 44 Passed: You can use radio buttons for questions where you want only one answer out of multiple options. 
+                        Add a radio button with the option set as "Indoor" before the text input. Remember that an input element is a void element.
+                        Example Code <input type="radio"> cat
+                        -->
+                        <!-- 
+                        Step 45 Passed: label elements are used to help associate the text for an input element with the input element itself, 
+                        especially for assistive technologies like screen readers. Nest your radio button inside a label element. 
+                        Example Code <label><input type="radio"> cat</label>
+                        -->
+                        <!-- 
+                        Step 46 Passed: The id attribute is used to identify specific HTML elements. Add an id attribute with the value "indoor" 
+                        to the radio button. When elements have multiple attributes, the order of the attributes doesn't matter.
+                        Example Code <input id="email">
+                        -->
+                        <!-- 
+                        Step 48 Passed: To ensure that selecting one radio button automatically deselects the other, 
+                        both buttons must have a name attribute with the same value. Add the name attribute with the value "indoor-outdoor" to both radio buttons. 
+                        Example Code 
+                        <input type="radio" name="meal"> Breakfast 
+                        <input type="radio" name="meal"> Lunch
+                        -->
+                        <!-- 
+                        Step 49 Passed: When the form is submitted, the form data is based on the radio button's name and value attributes. 
+                        Since the radio buttons currently don't have a value attribute, add a value attribute to both. 
+                        Set the value attribute to the same value as the button's id attribute for convenience. 
+                        -->
+                        <!--
+                        Step 61 Passed: To make a checkbox checked or a radio button selected by default, add the checked attribute to the input element. 
+                        Example: <input checked type="radio" name="meal" value="breakfast"> Breakfast
+                        Add the word "checked" with a space between it and other attributes. 
+                        Make the first radio button and the first checkbox selected by default.
+                        -->
+                        <label><input checked type="radio" id="indoor" name="indoor-outdoor" value="indoor"> Indoor</label>
+                        <!-- Step 47 Passed: Create another radio button below the first one. Nest it inside a label element with "Outdoor" 
+                        as the label text. Give the radio button an id attribute with "outdoor" as the value. 
+                        -->
+                        <label><input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor"> Outdoor</label>                        
+                    </fieldset>
+                    <!-- 
+                    Step 52 Passed: Add another fieldset element directly below the current fieldset element to prepare for additional form input elements.
+                     -->
+                    <fieldset>
+                        <!--
+                        Step 53 Passed: Add a legend element with the text "What's your cat's personality?" inside the second fieldset element.
+                        -->
+                        <legend> What's your cat's personality?</legend>
+                        <!--
+                        Step 54 Passed: Under the legend element, add an input element with its type attribute set to "checkbox" and provide the option "Loving". 
+                        -->
+                        <!--
+                        Step 55 Passed: Add an id attribute with the value "loving" to the checkbox input. 
+                        -->
+                        <!--
+                        Step 56 Passed: Associate text with an input by nesting the text inside a label and using a for attribute 
+                        that matches the input's id. 
+                        Example:
+                        <input id="breakfast" type="radio" name="meal" value="breakfast">
+                        <label for="breakfast">Breakfast</label>
+                        To link "Loving" with a checkbox, nest "Loving" in a label and use the matching for attribute.
+                        -->
+                        <!--
+                        Step 57 Passed: Add the name attribute with the value "personality" to the checkbox input. This helps servers process the form 
+                        when multiple checkboxes are present, even though it's not visible in the browser.
+                        -->
+                        <!--
+                        Step 60 Passed: Add a final checkbox with id="energetic" and the same name attribute as the previous checkboxes.
+                        Then, add a label with the text "Energetic" and associate it with the new checkbox using the for attribute.
+                        -->
+                        <input checked id="loving" type="checkbox" value="loving" name="personality"> <label for="loving"> Loving</label>
+                        <!--
+                        Step 58 Passed: Add a second checkbox with id="lazy" and the same name attribute as the previous checkbox.
+                        Then, add a label with the text "Lazy" and associate it with the new checkbox using the for attribute.
+                        -->
+                        <input id="lazy" type="checkbox" value="lazy" name="personality"> <label for="lazy">Lazy</label>
+                        <!--
+                        Step 59 Passed: Add a final checkbox with id="energetic" and the same name attribute as the previous checkboxes.
+                        Then, add a label with the text "Energetic" and associate it with the new checkbox using the for attribute.
+                        -->
+                        <input id="energetic" type="checkbox" value="energetic" name="personality"> <label for="energetic"> Energetic</label>
+                    </fieldset>                    
+                    <!-- 
+                    Step 37 Passed: The input element allows you several ways to collect data from a web form. 
+                    Nest an input element in the form element. Note that input elements are void elements and do not need closing tags. 
+                    -->
+                    <!-- 
+                    Step 38 Passed: Create a text field to get text input from a user by adding the type attribute with the value "text" to the input element. 
+                     -->
+                    <!-- 
+                    Step 39 Passed: In order for a form's data to be accessed by the location specified in the action attribute, 
+                    you must give the text field a name attribute and assign it a value to represent the data being submitted. 
+                    Add the name attribute with the value "catphotourl" to your text field. Example Code <input type="text" name="name">
+                    -->
+                    <!-- 
+                    Step 40 Passed: Placeholder text is used to give people a hint about what kind of information to enter into an input. 
+                    Add the placeholder text "cat photo URL" to your input element. Example Code <input type="text" placeholder="Ex. Jane Doe">. 
+                    -->
+                    <!-- 
+                    Step 41 Passed: To prevent a user from submitting your form when required information is missing, 
+                    add the required attribute to the input element. There's no need to set a value to the required attribute; 
+                    just add the word "required" to the input element, ensuring there is space between it and other attributes. 
+                    -->                    
+                    <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+                    <!-- 
+                    Step 42 Passed: The button element is used to create a clickable button. 
+                    Add a button element with the text "Submit" below the input element. 
+                    The default behavior of clicking a form button without any attributes submits the form to the location specified in the form's action attribute. 
+                    -->                    
+                    <!-- 
+                    Step 43 Passed: Even though you added your button below the text input, they appear next to each other on the page because both input and button elements are inline elements. 
+                    Add the type attribute with the value "submit" to the button to clarify that it is a submit button. 
+                    -->
+                    <button type="submit"> Submit</button>
+                </form>                
+            </section>
+        </main>
+        <!--
+        Step 62 Passed: The <footer> element defines a footer for a document or section, often containing 
+        information like author details, copyright, terms of use, or contact links.
+        Add a <footer> element after the <main> element.
+        -->
+        <footer>
+            <!--
+            Step 63 Passed: Within the <footer> element, nest a <p> element containing the text: 
+            "No Copyright - freeCodeCamp.org".
+            -->
+            <!--
+            Wrap the existing "freeCodeCamp.org" text in an <a> element to create a link. 
+            Set the href attribute to "https://www.freecodecamp.org".
+            -->
+            <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+        </footer>
+    </body>
+</html>
